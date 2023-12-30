@@ -3,29 +3,36 @@ import styled from 'styled-components';
 
 const EducationContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 100vh;
   overflow-y: scroll;
   background-color: rgba(77, 76, 76, 0.87);
   color: #fff;
-  padding: 40px 20px; /* Adjusted padding */
-  width: 100vw; /* Take up the entire viewport width */
+  padding: 40px 20px;
+  width: 100vw;
 `;
 
 const EducationItemsContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  max-width: 800px; /* Adjusted max-width */
+  justify-content: space-between; /* Place items horizontally next to each other */
+  max-width: 800px;
   width: 100%;
-  border: 2px double #3498db; /* Added border around Education items */
-  padding: 20px; /* Added padding */
+  border: 2px double #3498db; /* Common border around items */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px; /* Space education away from the top */
 `;
 
 const EducationItem = styled.div`
-  flex: 1;
+  width: 45%; /* Make items a bit wider */
   text-align: center;
+  padding: 20px;
+  border-right: 2px double #3498db; /* Border between items */
+  &:last-child {
+    border-right: none; /* Remove border on the last item */
+  }
 `;
 
 const UniversityLogo = styled.img`
@@ -47,8 +54,9 @@ const GPA = styled.p`
 
 const SectionHeading = styled.h2`
   color: #3498db;
+  align-self: flex-start;
   margin-bottom: 20px;
-  align-self: flex-start; /* Aligned to the left */
+  padding: 60px 90px 90px; /* Increased padding for top, left, and right */
 `;
 
 const EducationSection = () => {

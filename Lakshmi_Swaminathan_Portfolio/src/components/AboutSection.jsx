@@ -14,7 +14,7 @@ const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 40px;
+  padding: 100px 40px;
   background-color: #f9f9f9;
   color: #333;
   width: 100vw;
