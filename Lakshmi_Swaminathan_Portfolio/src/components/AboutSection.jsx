@@ -32,7 +32,7 @@ const AboutContainer = styled.div`
 `;
 
 const AboutContent = styled.div`
-  max-width: 800px;
+  max-width: 1000px; /* Adjust the width as needed */
   border: 1px solid #3498db;
   padding: 20px;
   border-radius: 8px;
