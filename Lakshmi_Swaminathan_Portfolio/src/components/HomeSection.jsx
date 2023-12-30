@@ -37,8 +37,8 @@ const IconsContainer = styled.div`
 `;
 
 const IconImage = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 10px;
 `;
 
@@ -73,7 +73,7 @@ const HomeSection = () => {
         <ContentContainer>
           <HomeImage src="../../public/images/Lakshmi.jpg" alt="Lakshmi Swaminathan" />
           <h1>Lakshmi Swaminathan</h1>
-          <Role>Full Stack Developer <br/> </Role>
+          <Role>Full Stack Developer <br/> Master's in Computer Science, Purdue University <br/> Ex-SDE-II at Verizon<br/></Role>
           <DownloadButton href="../../public/Lakshmi_Swaminathan_Resume.pdf" download>
             Download Resume
           </DownloadButton>

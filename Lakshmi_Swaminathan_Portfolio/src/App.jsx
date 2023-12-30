@@ -10,11 +10,15 @@ import ProjectsSection from './components/ProjectsSection';
 import ContactSection from './components/ContactSection';
 
 const Container = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
-  width: 100vw; /* Full viewport width */
-
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100vw;
+overflow-x: hidden;
+background-color: #1a1a1a;
+color: #fff;
 `;
+
 
 const App = () => {
   return (
