@@ -14,7 +14,7 @@ const AboutSection = () => {
   return (
     <AboutContainer id="about">
       <h2>About Me</h2>
-      <p>Your about me content goes here...</p>
+      <p>"We're here to put a dent in the Universe!!" - Steve Jobs<br/> I'm a passionate coder. Tech enthusiast. A person who loves to learn things at a deeper level. My long term goal is to make people's lives easier leveraging technology.<br/> I love solving problems, building solutions in the most optimal way possible. </p>
     </AboutContainer>
   );
 };

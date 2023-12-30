@@ -25,9 +25,10 @@ const ContentContainer = styled.div`
   color: #fff; /* White text color */
 `;
 
-const Role = styled.p`
+const Role = styled.h3`
   margin-top: 10px;
   font-weight: bold;
+  color:rgba(134, 195, 245, 0.87);
 `;
 
 const IconsContainer = styled.div`
