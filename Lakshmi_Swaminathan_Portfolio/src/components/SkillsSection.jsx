@@ -7,6 +7,7 @@ height: 100vh;
   background-color: #f9f9f9;
   color: #333;
   padding: 120px 40px 40px;
+  width: 100vw; /* Take up the entire viewport width */
 `;
 
 const SkillsSection = () => {

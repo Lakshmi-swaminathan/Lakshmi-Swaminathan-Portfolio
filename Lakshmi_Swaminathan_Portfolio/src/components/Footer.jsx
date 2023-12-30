@@ -8,6 +8,7 @@ const FooterContainer = styled.footer`
   color: #fff;
   text-align: center;
   padding: 120px 40px 40px;
+  width: 100vw; /* Take up the entire viewport width */
 `;
 
 const Footer = () => {

@@ -6,7 +6,7 @@ const HomeContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1a1a1a; /* Dark background color */
+  background-color:  rgba(77, 76, 76, 0.87);
   padding: 0 20px;
   box-sizing: border-box; /* Include padding and borders in the width calculation */
   width: 100vw; /* Take up the entire viewport width */
