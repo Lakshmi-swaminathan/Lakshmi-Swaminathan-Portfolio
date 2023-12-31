@@ -52,6 +52,9 @@ const NavBar = () => {
           <NavLink href="#work-experience">Work Experience</NavLink>
         </NavItem>
         <NavItem>
+          <NavLink href="#awards">Awards</NavLink>
+        </NavItem>
+        <NavItem>
           <NavLink href="#projects">Projects</NavLink>
         </NavItem>
         <NavItem>

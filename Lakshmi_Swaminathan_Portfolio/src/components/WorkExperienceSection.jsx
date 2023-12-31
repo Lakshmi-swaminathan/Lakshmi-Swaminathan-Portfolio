@@ -90,6 +90,7 @@ const WorkExperienceSection = () => {
             <li>Achieved Salesforce integration and security with a 98% accuracy rating in a 42Crunch security audit.</li>
             <li>Resolved Salesforce governor limit exceptions through optimized coding and refined debugging skills during production support.</li>
           </ul>
+          <AwardsLink href="https://drive.google.com/drive/folders/12r6UBXnERNEI5MviBDEama6zBA9F8PpB?usp=sharing" target="_blank" rel="noopener noreferrer">Click here to view Awards I received for Personal Commitment</AwardsLink>
         </TimelineItem>
 
         {/* Experience 2 */}
@@ -101,7 +102,9 @@ const WorkExperienceSection = () => {
            <li>Customized Salesforce CPQ with Lightning Web Components.</li>
            <li>Designed and Implemented a dynamic contracting model.</li>
           </ul>
-        </TimelineItem>
+          <AwardsLink href="https://drive.google.com/file/d/15yhXu7LZRj0HT35sBg79bv0Yss_ZKKby/view?usp=sharing" target="_blank" rel="noopener noreferrer">Click here to view Award I received for Accountability</AwardsLink>
+          <AwardsLink href="https://drive.google.com/file/d/15yhXu7LZRj0HT35sBg79bv0Yss_ZKKby/view?usp=sharing" target="_blank" rel="noopener noreferrer">Click here to view Award I received for Quality/Process Improvement</AwardsLink>
+          </TimelineItem>
 
         {/* Experience 3 */}
         <TimelineItem>
@@ -116,4 +119,10 @@ const WorkExperienceSection = () => {
   );
 };
 
+const AwardsLink = styled.a`
+  color: #3498db; /* Adjusted link color */
+  text-decoration: underline; /* Added underline for better indication */
+  cursor: pointer;
+  margin-top: 10px;
+`;
 export default WorkExperienceSection;

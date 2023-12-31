@@ -8,6 +8,7 @@ import SkillsSection from './components/SkillsSection';
 import WorkExperienceSection from './components/WorkExperienceSection';
 import ProjectsSection from './components/ProjectsSection';
 import ContactSection from './components/ContactSection';
+import AwardsSection from './components/AwardsSection';
 
 const Container = styled.div`
 display: flex;
@@ -30,6 +31,7 @@ const App = () => {
       <EducationSection />
       <SkillsSection />
       <WorkExperienceSection />
+      <AwardsSection/>
       <ProjectsSection />
       <ContactSection />
     </Container>
