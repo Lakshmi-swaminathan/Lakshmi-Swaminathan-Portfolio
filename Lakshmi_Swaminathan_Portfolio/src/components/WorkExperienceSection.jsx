@@ -1,24 +1,31 @@
 import React from 'react';
 import styled,{keyframes} from 'styled-components';
 
-const zoomIn = keyframes`
+const fadeIn = keyframes`
   from {
-    transform: scale(1);
+    opacity: 0;
+    transform: scale(0.9);
   }
   to {
-    transform: scale(1.0000000000001);
+    opacity: 1;
+    transform: scale(1);
   }
 `;
 
 const WorkExperienceContainer = styled.div`
+  height: 100%;
   background-color: rgba(77, 76, 76, 0.87);
   color: #fff;
-  padding: 800px 800px; /* Increased left and right padding */
-  width: 100vw;
-  transition: transform 0.3s ease;
+  padding: 40px; /* Increased padding */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out; /* Added transition property */
 
   &:hover {
-    animation: ${zoomIn} 0.3s ease-in-out;
+    animation: ${fadeIn} 0.5s ease-in-out; /* Adjusted animation properties */
     transform: scale(1.05);
   }
 `;
@@ -67,7 +74,7 @@ const ExperienceTitle = styled.h3`
 const WorkExperienceSection = () => {
   return (
     <WorkExperienceContainer id="work-experience">
-       <h2 style={{ paddingLeft: '20px' }}>Work Experience</h2>
+       <h2 style={{ paddingLeft: '50px', alignSelf: 'flex-start' }}>Work Experience</h2>
       <Timeline>
         <TimelineBar />
         {/* Experience 1 */}
