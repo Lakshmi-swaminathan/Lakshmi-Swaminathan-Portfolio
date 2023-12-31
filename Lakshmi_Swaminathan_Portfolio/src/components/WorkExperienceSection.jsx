@@ -1,20 +1,19 @@
 import React from 'react';
 import styled,{keyframes} from 'styled-components';
 
-
 const zoomIn = keyframes`
   from {
     transform: scale(1);
   }
   to {
-    transform: scale(1.05);
+    transform: scale(1.0000000000001);
   }
 `;
 
 const WorkExperienceContainer = styled.div`
   background-color: rgba(77, 76, 76, 0.87);
   color: #fff;
-  padding: 40px; /* Adjusted padding */
+  padding: 800px 800px; /* Increased left and right padding */
   width: 100vw;
   transition: transform 0.3s ease;
 
