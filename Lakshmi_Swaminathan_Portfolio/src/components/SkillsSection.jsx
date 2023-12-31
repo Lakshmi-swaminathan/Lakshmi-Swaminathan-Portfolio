@@ -15,8 +15,12 @@ const SkillsContainer = styled.div`
   overflow-y: scroll;
   background-color: #f9f9f9;
   color: #333;
-  padding: 120px 40px 40px;
+  padding: 40px 40px 40px; /* Adjusted top padding */
   width: 100vw; /* Take up the entire viewport width */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
   transition: transform 0.3s ease;
 
   &:hover {
@@ -26,10 +30,14 @@ const SkillsContainer = styled.div`
 `;
 
 
+
+
+
+
 const SkillsSection = () => {
   return (
     <SkillsContainer id="skills">
-      <h2>Skills</h2>
+      <SkillsHeading>Skills</SkillsHeading>
       <SkillsList>
         <SkillCategory>
           <CategoryIcon src="../../public/images/Laptop.png" alt="Programming Languages Icon" />
@@ -63,17 +71,29 @@ const SkillsSection = () => {
           </CategoryInfo>
         </SkillCategory>
 
-        {/* Add more SkillCategory components for other categories */}
       </SkillsList>
     </SkillsContainer>
   );
 };
 
+const SkillsHeading = styled.h2`
+  margin-bottom: 20px;
+  align-self: flex-start;
+  padding-left: 60px;
+  color: rgba(59, 160, 243, 0.87);
+`;
+
+
 const SkillsList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: 2px solid rgba(59, 160, 243, 0.87); /* Add border */
+  border-radius: 10px; /* Optional: Add border radius for a rounded look */
+  padding: 20px; /* Add padding to move it lower and provide space inside the border */
+  margin-top: 20px; /* Adjusted top margin for better spacing */
 `;
+
 
 const SkillCategory = styled.div`
   width: 48%; /* Two categories in a row with a small gap */
@@ -92,6 +112,7 @@ const CategoryInfo = styled.div``;
 
 const CategoryTitle = styled.h3`
   margin-bottom: 5px;
+  color: rgba(59, 160, 243, 0.87);
 `;
 
 const CategorySkills = styled.p`
