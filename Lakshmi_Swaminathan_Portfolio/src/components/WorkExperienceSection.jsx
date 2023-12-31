@@ -1,13 +1,27 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
+
+
+const zoomIn = keyframes`
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+`;
 
 const WorkExperienceContainer = styled.div`
-  height: 100vh;
-  overflow-y: scroll;
   background-color: rgba(77, 76, 76, 0.87);
   color: #fff;
-  padding: 120px 40px 40px;
+  padding: 40px; /* Adjusted padding */
   width: 100vw;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    animation: ${zoomIn} 0.3s ease-in-out;
+    transform: scale(1.05);
+  }
 `;
 
 const Timeline = styled.div`
@@ -27,27 +41,28 @@ const TimelineBar = styled.div`
 
 const TimelineItem = styled.div`
   position: relative;
-  padding: 10px; /* Adjusted padding for a smaller card */
+  padding: 10px;
   border-radius: 10px;
-  margin-bottom: 10px; /* Adjusted margin for a smaller gap between cards */
-  background-color: #fff; /* Set background color to white */
-  color: #333; /* Adjusted text color for better visibility */
-  max-width: 50%; /* Adjusted max-width for a smaller card */
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #333;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the left for odd items */
+  align-items: flex-start;
   z-index: 2;
 
   &:nth-child(even) {
     margin-left: auto;
-    align-items: flex-start; /* Align items to the left for even items */
+    align-items: flex-start;
   }
 `;
 
 const ExperienceTitle = styled.h3`
   margin-bottom: 5px;
-  font-size: 1.2em; /* Adjusted font size for a smaller card */
-  align-self: flex-start; /* Align title to the left */
+  font-size: 1.2em;
+  align-self: flex-start;
+  padding-left: 20px;
 `;
 
 const WorkExperienceSection = () => {
