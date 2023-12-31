@@ -1,5 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const zoomIn = keyframes`
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+`;
 
 const EducationContainer = styled.div`
   display: flex;
@@ -12,26 +21,32 @@ const EducationContainer = styled.div`
   color: #fff;
   padding: 40px 20px;
   width: 100vw;
+  border: 2px double #3498db; /* Common border around the entire component */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+  transition: transform 0.3s ease; /* Added transition for animation */
+  &:hover {
+    animation: ${zoomIn} 0.3s ease-in-out; /* Applied the zoom-in animation on hover */
+    transform: scale(1.05);
+  }
 `;
 
 const EducationItemsContainer = styled.div`
   display: flex;
-  justify-content: space-between; /* Place items horizontally next to each other */
+  justify-content: space-between;
   max-width: 800px;
   width: 100%;
-  border: 2px double #3498db; /* Common border around items */
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 20px; /* Space education away from the top */
 `;
 
 const EducationItem = styled.div`
-  width: 45%; /* Make items a bit wider */
+  width: 45%;
   text-align: center;
   padding: 20px;
-  border-right: 2px double #3498db; /* Border between items */
-  &:last-child {
-    border-right: none; /* Remove border on the last item */
+  border: 2px double #3498db;
+  border-radius: 10px;
+  &:not(:last-child) {
+    border-right: none;
   }
 `;
 
@@ -56,7 +71,7 @@ const SectionHeading = styled.h2`
   color: #3498db;
   align-self: flex-start;
   margin-bottom: 20px;
-  padding: 60px 90px 90px; /* Increased padding for top, left, and right */
+  padding: 60px 90px 90px;
 `;
 
 const EducationSection = () => {
