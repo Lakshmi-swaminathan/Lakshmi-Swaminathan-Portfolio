@@ -21,10 +21,10 @@ const HomeContainer = styled.div`
   width: 100vw;
   transition: transform 0.3s ease;
 
-  &:hover {
-    animation: ${zoomIn} 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
+  // &:hover {
+  //   animation: ${zoomIn} 0.3s ease-in-out;
+  //   transform: scale(1.05);
+  // }
 `;
 
 const HomeImage = styled.img`
@@ -56,6 +56,25 @@ const IconImage = styled.img`
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  padding-right: 5px;
+
+  &:hover {
+    animation: ${zoomIn} 0.3s ease-in-out;
+    transform: scale(1.05);
+  }
+`;
+
+const IconImage1 = styled.img`
+  width: 72px;
+  height: 72px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    animation: ${zoomIn} 0.3s ease-in-out;
+    transform: scale(1.05);
+  }
 `;
 
 const IconLink = styled.a`
@@ -79,7 +98,9 @@ const DownloadButton = styled.a`
   cursor: pointer;
   transition: background-color 0.3s ease;
 
+
   &:hover {
+    animation: ${zoomIn} 0.3s ease-in-out;
     background-color: #2980b9;
   }
 `;
@@ -97,10 +118,10 @@ const HomeSection = () => {
       </ContentContainer>
       <IconsContainer>
         <IconLink href="https://github.com/Lakshmi-swaminathan" target="_blank" rel="noopener noreferrer">
-          <IconImage src="../../public/images/Github_icon.png" alt="GitHub" />
+          <IconImage src="../../public/images/github-mark-white.png" alt="GitHub" />
         </IconLink>
         <IconLink href="https://www.linkedin.com/in/lakshmi-swaminathan-g/" target="_blank" rel="noopener noreferrer">
-          <IconImage src="../../public/images/LinkedIn.png" alt="LinkedIn" />
+          <IconImage1 src="../../public/images/Linkedin_Logo_biggest.png" alt="LinkedIn" />
         </IconLink>
       </IconsContainer>
     </HomeContainer>

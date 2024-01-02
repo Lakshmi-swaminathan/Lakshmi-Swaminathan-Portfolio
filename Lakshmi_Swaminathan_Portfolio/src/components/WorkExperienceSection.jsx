@@ -17,6 +17,7 @@ const WorkExperienceContainer = styled.div`
   background-color: rgba(77, 76, 76, 0.87);
   color: #fff;
   padding: 40px; /* Increased padding */
+  padding-top:70px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -24,10 +25,10 @@ const WorkExperienceContainer = styled.div`
   justify-content: center;
   transition: transform 0.5s ease-in-out; /* Added transition property */
 
-  &:hover {
-    animation: ${fadeIn} 0.5s ease-in-out; /* Adjusted animation properties */
-    transform: scale(1.05);
-  }
+  // &:hover {
+  //   animation: ${fadeIn} 0.5s ease-in-out; /* Adjusted animation properties */
+  //   transform: scale(1.05);
+  // }
 `;
 
 const Timeline = styled.div`
@@ -79,7 +80,18 @@ const WorkExperienceSection = () => {
         <TimelineBar />
         {/* Experience 1 */}
         <TimelineItem>
-          <ExperienceTitle>Engr I-Software development</ExperienceTitle>
+        <ExperienceTitle>Engr II-Software development</ExperienceTitle>
+          <p>Verizon, Chennai, India - Jul 2022 to Jun 2023</p>
+          <ul>
+          <li>Spearheaded an innovative upsell sales process enhancement.</li>
+           <li>Customized Salesforce CPQ with Lightning Web Components.</li>
+           <li>Designed and Implemented a dynamic contracting model.</li>
+          </ul>
+         </TimelineItem>
+
+        {/* Experience 2 */}
+        <TimelineItem>
+        <ExperienceTitle>Engr I-Software development</ExperienceTitle>
           <p>Verizon, Chennai, India - Sept 2020 to Jul 2022</p>
           <ul>
           <li>Translated requirements into user stories and consistently delivered on time.</li>
@@ -90,20 +102,6 @@ const WorkExperienceSection = () => {
             <li>Achieved Salesforce integration and security with a 98% accuracy rating in a 42Crunch security audit.</li>
             <li>Resolved Salesforce governor limit exceptions through optimized coding and refined debugging skills during production support.</li>
           </ul>
-          <AwardsLink href="https://drive.google.com/drive/folders/12r6UBXnERNEI5MviBDEama6zBA9F8PpB?usp=sharing" target="_blank" rel="noopener noreferrer">Click here to view Awards I received for Personal Commitment</AwardsLink>
-        </TimelineItem>
-
-        {/* Experience 2 */}
-        <TimelineItem>
-          <ExperienceTitle>Engr II-Software development</ExperienceTitle>
-          <p>Verizon, Chennai, India - Jul 2022 to Jun 2023</p>
-          <ul>
-          <li>Spearheaded an innovative upsell sales process enhancement.</li>
-           <li>Customized Salesforce CPQ with Lightning Web Components.</li>
-           <li>Designed and Implemented a dynamic contracting model.</li>
-          </ul>
-          <AwardsLink href="https://drive.google.com/file/d/15yhXu7LZRj0HT35sBg79bv0Yss_ZKKby/view?usp=sharing" target="_blank" rel="noopener noreferrer">Click here to view Award I received for Accountability</AwardsLink>
-          <AwardsLink href="https://drive.google.com/file/d/15yhXu7LZRj0HT35sBg79bv0Yss_ZKKby/view?usp=sharing" target="_blank" rel="noopener noreferrer">Click here to view Award I received for Quality/Process Improvement</AwardsLink>
           </TimelineItem>
 
         {/* Experience 3 */}
@@ -119,10 +117,5 @@ const WorkExperienceSection = () => {
   );
 };
 
-const AwardsLink = styled.a`
-  color: #3498db; /* Adjusted link color */
-  text-decoration: underline; /* Added underline for better indication */
-  cursor: pointer;
-  margin-top: 10px;
-`;
+
 export default WorkExperienceSection;
