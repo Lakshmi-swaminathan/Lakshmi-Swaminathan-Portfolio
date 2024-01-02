@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef  } from 'react';
 import styled,{keyframes} from 'styled-components';
 
 const zoomIn = keyframes`
@@ -34,63 +34,63 @@ const AwardsSectionContainer = styled.div`
 
 
 const AwardsSection = () => {
-  const [simpleThanksCount, setSimpleThanksCount] = useState(0);
+    const [simpleThanksCount, setSimpleThanksCount] = useState(0);
   const [personalCommitmentCount, setPersonalCommitmentCount] = useState(0);
   const [accountabilityCount, setAccountabilityCount] = useState(0);
   const [processImprovementCount, setProcessImprovementCount] = useState(0);
 
+    const awardsSectionRef = useRef(null);
+
     const startCounting = () => {
         const simpleThanksInterval = setInterval(() => {
-          setSimpleThanksCount((prevCount) => {
-            if (prevCount < 20) {
-              return prevCount + 1;
-            } else {
-              clearInterval(simpleThanksInterval);
-              return prevCount;
-            }
-          });
+          setSimpleThanksCount((prevCount) => (prevCount < 20 ? prevCount + 1 : prevCount));
         }, 100);
-    
+      
         const personalCommitmentInterval = setInterval(() => {
-          setPersonalCommitmentCount((prevCount) => {
-            if (prevCount < 2) {
-              return prevCount + 1;
-            } else {
-              clearInterval(personalCommitmentInterval);
-              return prevCount;
-            }
-          });
+          setPersonalCommitmentCount((prevCount) => (prevCount < 2 ? prevCount + 1 : prevCount));
         }, 500);
-    
+      
         const accountabilityInterval = setInterval(() => {
-          setAccountabilityCount((prevCount) => {
-            if (prevCount < 1) {
-              return prevCount + 1;
-            } else {
-              clearInterval(accountabilityInterval);
-              return prevCount;
-            }
-          });
+          setAccountabilityCount((prevCount) => (prevCount < 1 ? prevCount + 1 : prevCount));
         }, 700);
-    
+      
         const processImprovementInterval = setInterval(() => {
-          setProcessImprovementCount((prevCount) => {
-            if (prevCount < 1) {
-              return prevCount + 1;
-            } else {
-              clearInterval(processImprovementInterval);
-              return prevCount;
-            }
-          });
+          setProcessImprovementCount((prevCount) => (prevCount < 1 ? prevCount + 1 : prevCount));
         }, 900);
+      
+        return [simpleThanksInterval, personalCommitmentInterval, accountabilityInterval, processImprovementInterval];
+      };      
+  
+      const handleIntersection = (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          const intervals = startCounting();
+      
+          // Clear intervals after a certain duration (adjust as needed)
+          setTimeout(() => {
+            intervals.forEach(clearInterval);
+          }, 5000); // Change 5000 to the duration you want the counting to continue (in milliseconds)
+        }
       };
-    
-      useEffect(() => {
-        startCounting();
-      }, []);
-
+      
+  
+    useEffect(() => {
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5, // Change this threshold based on when you want the counting to start
+      };
+  
+      const observer = new IntersectionObserver(handleIntersection, options);
+      if (awardsSectionRef.current) {
+        observer.observe(awardsSectionRef.current);
+      }
+  
+      return () => observer.disconnect();
+    }, [awardsSectionRef]);
+  
         return (
-            <AwardsSectionContainer id="awards">
+            <AwardsSectionContainer id="awards" ref={awardsSectionRef}>
               <h2 style={{ paddingLeft: '50px', alignSelf: 'flex-start', color: 'rgba(59, 160, 243, 0.87' }}>
                 Awards Received from Verizon
               </h2>
@@ -153,6 +153,12 @@ const AwardsSection = () => {
           border-radius: 10px;
           margin: 20px auto; /* Center the AwardsList */
           text-align: center;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            animation: ${zoomIn} 0.3s ease-in-out;
+            transform: scale(1.05);
+          }
         `;
         
         const AwardsCategory = styled.div`
