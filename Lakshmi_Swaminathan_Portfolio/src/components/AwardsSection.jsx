@@ -34,7 +34,7 @@ const AwardsSectionContainer = styled.div`
 
 
 const AwardsSection = () => {
-    const [simpleThanksCount, setSimpleThanksCount] = useState(0);
+  const [simpleThanksCount, setSimpleThanksCount] = useState(0);
   const [personalCommitmentCount, setPersonalCommitmentCount] = useState(0);
   const [accountabilityCount, setAccountabilityCount] = useState(0);
   const [processImprovementCount, setProcessImprovementCount] = useState(0);
