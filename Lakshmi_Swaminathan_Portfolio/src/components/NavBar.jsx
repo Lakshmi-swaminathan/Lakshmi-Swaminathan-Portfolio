@@ -1,5 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const zoomIn = keyframes`
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+`;
 
 const NavContainer = styled.nav`
   position: fixed;
@@ -19,6 +28,10 @@ const NavList = styled.ul`
 
 const NavItem = styled.li`
   margin-right: 20px;
+  &:hover {
+    animation: ${zoomIn} 0.3s ease-in-out;
+    transform: scale(1.05);
+  }
 `;
 
 const NavLink = styled.a`

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const zoomIn = keyframes`
   from {
@@ -25,6 +27,19 @@ const HomeContainer = styled.div`
   //   animation: ${zoomIn} 0.3s ease-in-out;
   //   transform: scale(1.05);
   // }
+`;
+
+const MailIcon = styled.a`
+width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  padding-right: 5px;
+
+  &:hover {
+    animation: ${zoomIn} 0.3s ease-in-out;
+    transform: scale(1.05);
+  }
 `;
 
 const HomeImage = styled.img`
@@ -123,6 +138,9 @@ const HomeSection = () => {
         <IconLink href="https://www.linkedin.com/in/lakshmi-swaminathan-g/" target="_blank" rel="noopener noreferrer">
           <IconImage1 src="../../public/images/Linkedin_Logo_biggest.png" alt="LinkedIn" />
         </IconLink>
+        <MailIcon href="mailto:lakshmiswaminathan08@gmail.com">
+        <FontAwesomeIcon icon={faEnvelope} style={{ height: '60px', width: '60px', color:'rgba(12, 141, 247, 0.87)' }}/>
+      </MailIcon>
       </IconsContainer>
     </HomeContainer>
   );
