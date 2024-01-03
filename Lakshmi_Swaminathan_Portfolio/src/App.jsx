@@ -7,7 +7,6 @@ import EducationSection from './components/EducationSection';
 import SkillsSection from './components/SkillsSection';
 import WorkExperienceSection from './components/WorkExperienceSection';
 import ProjectsSection from './components/ProjectsSection';
-import ContactSection from './components/ContactSection';
 import AwardsSection from './components/AwardsSection';
 
 const Container = styled.div`
@@ -33,7 +32,6 @@ const App = () => {
       <WorkExperienceSection />
       <AwardsSection/>
       <ProjectsSection />
-      <ContactSection />
     </Container>
   );
 };

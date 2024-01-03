@@ -70,9 +70,6 @@ const NavBar = () => {
         <NavItem>
           <NavLink href="#projects">Projects</NavLink>
         </NavItem>
-        <NavItem>
-          <NavLink href="#contact">Contact</NavLink>
-        </NavItem>
       </NavList>
     </NavContainer>
   );
