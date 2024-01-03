@@ -27,6 +27,8 @@ const ProjectTile = styled.div`
   cursor: pointer;
   margin-bottom: 20px;
   padding: 10px;
+  padding-top:70px;
+  padding-bottom:70px;
   border: 1px solid #fff;
   border-radius: 8px;
   transition: transform 0.3s ease, background-color 0.3s ease;
@@ -62,6 +64,9 @@ text-decoration: underline;
 cursor: pointer;
 `;
 
+const ProjectContent=styled.div`
+padding-top:120px;
+`;
 
 const ProjectLinkContainer = styled.div`
   margin-top: 10px;
@@ -93,7 +98,7 @@ const Projects = () => {
   return (
     <ProjectsContainer id="projects">
       <h2 style={{ paddingLeft: '50px', alignSelf: 'flex-start' }}>Technical Projects</h2>
-
+      <ProjectContent>
       {projectsData.map((project, index) => (
         <ProjectTile key={index} onClick={() => handleProjectClick(index)}>
           <ProjectTitle>{project.title}</ProjectTitle>
@@ -112,6 +117,7 @@ const Projects = () => {
           )}
         </ProjectTile>
       ))}
+      </ProjectContent>
     </ProjectsContainer>
   );
 };
