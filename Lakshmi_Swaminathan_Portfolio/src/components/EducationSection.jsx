@@ -19,7 +19,7 @@ const EducationContainer = styled.div`
   overflow-y: scroll;
   background-color: rgba(77, 76, 76, 0.87);
   color: #fff;
-  padding: 40px 20px;
+  // padding: 40px 20px;
   width: 100vw;
   border: 2px double #3498db; /* Common border around the entire component */
   border-radius: 10px;
@@ -42,7 +42,7 @@ const EducationItemsContainer = styled.div`
 const EducationItem = styled.div`
   width: 45%;
   text-align: center;
-  padding: 20px;
+  padding: 70px;
   border: 2px double #3498db;
   border-radius: 10px;
   &:not(:last-child) {
@@ -71,7 +71,8 @@ const SectionHeading = styled.h2`
   color: #3498db;
   align-self: flex-start;
   margin-bottom: 20px;
-  padding: 60px 90px 90px;
+  // padding: 60px 90px 90px;
+  padding-left: 90px;
 `;
 
 const EducationSection = () => {
@@ -92,7 +93,7 @@ const EducationSection = () => {
           <UniversityName>Sastra University</UniversityName>
           <DegreeInfo>June 2016 - Nov 2020</DegreeInfo>
           <DegreeInfo>Bachelor of Technology in Computer Science Engineering</DegreeInfo>
-          <GPA>7.1981/10.00 CGPA</GPA>
+          <GPA>7.19/10.00 CGPA</GPA>
         </EducationItem>
       </EducationItemsContainer>
     </EducationContainer>

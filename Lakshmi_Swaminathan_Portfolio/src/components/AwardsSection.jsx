@@ -14,12 +14,12 @@ const AwardsSectionContainer = styled.div`
   height: 100vh;
   background-color: #fff;
   color: #000;
-  padding: 120px 40px;
+//   padding: 120px 40px;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+//   align-items: flex-start;
+//   justify-content: center;
   transition: transform 0.3s ease;
 
   &:hover {
@@ -28,7 +28,9 @@ const AwardsSectionContainer = styled.div`
   }
 `;
 
-
+const AwardListContainer= styled.div`
+padding-top: 20px;
+`;
 
 
 
@@ -91,9 +93,10 @@ const AwardsSection = () => {
   
         return (
             <AwardsSectionContainer id="awards" ref={awardsSectionRef}>
-              <h2 style={{ paddingLeft: '50px', alignSelf: 'flex-start', color: 'rgba(59, 160, 243, 0.87' }}>
+              <h2 style={{ paddingLeft: '70px', paddingTop: '120px', alignSelf: 'flex-start', color: 'rgba(59, 160, 243, 0.87' }}>
                 Awards Received from Verizon
               </h2>
+              <AwardListContainer></AwardListContainer>
               <AwardsList>
                 <AwardsCategory>
                   <CategoryTitle>Spotlight Awards</CategoryTitle>
@@ -149,7 +152,7 @@ const AwardsSection = () => {
         const AwardsList = styled.div`
           width: 70%;
           border: 2px solid rgba(191, 225, 253, 0.87);
-          padding: 20px;
+          padding: 70px;
           border-radius: 10px;
           margin: 20px auto; /* Center the AwardsList */
           text-align: center;
@@ -163,6 +166,7 @@ const AwardsSection = () => {
         
         const AwardsCategory = styled.div`
           margin-bottom: 20px;
+          padding: 5px;
         `;
         
         const CategoryTitle = styled.h2`

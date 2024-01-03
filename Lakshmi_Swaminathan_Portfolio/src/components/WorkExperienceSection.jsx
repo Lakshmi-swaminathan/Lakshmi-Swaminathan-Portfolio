@@ -1,14 +1,12 @@
 import React from 'react';
 import styled,{keyframes} from 'styled-components';
 
-const fadeIn = keyframes`
+const zoomIn = keyframes`
   from {
-    opacity: 0;
-    transform: scale(0.9);
+    transform: scale(1);
   }
   to {
-    opacity: 1;
-    transform: scale(1);
+    transform: scale(1.05);
   }
 `;
 
@@ -23,12 +21,6 @@ const WorkExperienceContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.5s ease-in-out; /* Added transition property */
-
-  // &:hover {
-  //   animation: ${fadeIn} 0.5s ease-in-out; /* Adjusted animation properties */
-  //   transform: scale(1.05);
-  // }
 `;
 
 const Timeline = styled.div`
@@ -62,6 +54,12 @@ const TimelineItem = styled.div`
   &:nth-child(even) {
     margin-left: auto;
     align-items: flex-start;
+  }
+  transition: transform 0.5s ease-in-out; /* Added transition property */
+
+  &:hover {
+    animation: ${zoomIn} 0.5s ease-in-out; /* Adjusted animation properties */
+    transform: scale(1.05);
   }
 `;
 

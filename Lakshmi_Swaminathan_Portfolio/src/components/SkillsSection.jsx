@@ -15,12 +15,13 @@ const SkillsContainer = styled.div`
   overflow-y: scroll;
   background-color: #f9f9f9;
   color: #333;
-  padding: 40px 40px 40px; /* Adjusted top padding */
+  // padding: 40px 40px 40px; /* Adjusted top padding */
+  padding-top:120px;
   width: 100vw; /* Take up the entire viewport width */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  justify-content: center; /* Center content vertically */
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center; /* Center content horizontally */
+  // justify-content: center; /* Center content vertically */
   transition: transform 0.3s ease;
 
   &:hover {
@@ -79,8 +80,9 @@ const SkillsSection = () => {
 const SkillsHeading = styled.h2`
   margin-bottom: 20px;
   align-self: flex-start;
-  padding-left: 60px;
+  padding-left: 100px;
   color: rgba(59, 160, 243, 0.87);
+  padding-bottom:100px;
 `;
 
 
@@ -88,10 +90,12 @@ const SkillsList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 2px solid rgba(59, 160, 243, 0.87); /* Add border */
-  border-radius: 10px; /* Optional: Add border radius for a rounded look */
-  padding: 20px; /* Add padding to move it lower and provide space inside the border */
-  margin-top: 20px; /* Adjusted top margin for better spacing */
+  border: 2px solid rgba(59, 160, 243, 0.87);
+  border-radius: 10px;
+  padding: 100px;
+  margin-top: 20px;
+  width: 50vw;
+  margin: 0 auto; /* Center the SkillsList */
 `;
 
 
