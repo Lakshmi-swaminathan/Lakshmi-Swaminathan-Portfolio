@@ -124,19 +124,19 @@ const HomeSection = () => {
   return (
     <HomeContainer id="home">
       <ContentContainer>
-        <HomeImage src="/public/images/Lakshmi.jpg" alt="Lakshmi Swaminathan" />
+        <HomeImage src="../../public/images/Lakshmi.jpg" alt="Lakshmi Swaminathan" />
         <h1>Lakshmi Swaminathan</h1>
         <Role>Full Stack Developer <br /> Master's in Computer Science, Purdue University <br /> Ex-SDE-II at Verizon<br /></Role>
-        <DownloadButton href="/public/Lakshmi_Swaminathan_Resume.pdf" download>
+        <DownloadButton href="../../public/Lakshmi_Swaminathan_Resume.pdf" download>
           Download Resume
         </DownloadButton>
       </ContentContainer>
       <IconsContainer>
         <IconLink href="https://github.com/Lakshmi-swaminathan" target="_blank" rel="noopener noreferrer">
-          <IconImage src="/public/images/github-mark-white.png" alt="GitHub" />
+          <IconImage src="../../public/images/github-mark-white.png" alt="GitHub" />
         </IconLink>
         <IconLink href="https://www.linkedin.com/in/lakshmi-swaminathan-g/" target="_blank" rel="noopener noreferrer">
-          <IconImage1 src="/public/images/Linkedin_Logo_biggest.png" alt="LinkedIn" />
+          <IconImage1 src="../../public/images/Linkedin_Logo_biggest.png" alt="LinkedIn" />
         </IconLink>
         <MailIcon href="mailto:lakshmiswaminathan08@gmail.com">
         <FontAwesomeIcon icon={faEnvelope} style={{ height: '60px', width: '60px', color:'rgba(12, 141, 247, 0.87)' }}/>
