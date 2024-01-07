@@ -41,7 +41,7 @@ const SkillsSection = () => {
       <SkillsHeading>Skills</SkillsHeading>
       <SkillsList>
         <SkillCategory>
-          <CategoryIcon src="../images/Laptop.png" alt="Programming Languages Icon" />
+          <CategoryIcon src="/images/Laptop.png" alt="Programming Languages Icon" />
           <CategoryInfo>
             <CategoryTitle>Programming Languages</CategoryTitle>
             <CategorySkills>Python, Javascript, Apex, Java, C++, C</CategorySkills>
@@ -49,7 +49,7 @@ const SkillsSection = () => {
         </SkillCategory>
 
         <SkillCategory>
-          <CategoryIcon src="../images/Web_Tech.jpg" alt="Web Technologies Icon" />
+          <CategoryIcon src="/images/Web_Tech.jpg" alt="Web Technologies Icon" />
           <CategoryInfo>
             <CategoryTitle>Web Technologies</CategoryTitle>
             <CategorySkills>ReactJs, NodeJs, ExpressJs, LWC, Aura</CategorySkills>
@@ -57,7 +57,7 @@ const SkillsSection = () => {
         </SkillCategory>
 
         <SkillCategory>
-          <CategoryIcon src="../images/Database.png" alt="Database Technologies Icon" />
+          <CategoryIcon src="/images/Database.png" alt="Database Technologies Icon" />
           <CategoryInfo>
             <CategoryTitle>Database Technologies</CategoryTitle>
             <CategorySkills>MongoDB, Mongoose ODM</CategorySkills>
@@ -65,7 +65,7 @@ const SkillsSection = () => {
         </SkillCategory>
 
         <SkillCategory>
-          <CategoryIcon src="../images/Software.png" alt="Software Icon" />
+          <CategoryIcon src="/images/Software.png" alt="Software Icon" />
           <CategoryInfo>
             <CategoryTitle>Software</CategoryTitle>
             <CategorySkills>Visual Studio Code, Github, Jenkins</CategorySkills>
