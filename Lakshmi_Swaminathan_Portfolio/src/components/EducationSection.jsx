@@ -81,7 +81,7 @@ const EducationSection = () => {
       <SectionHeading>Education</SectionHeading>
       <EducationItemsContainer>
         <EducationItem>
-          <UniversityLogo src="../../public/images/Purdue_logo.png" alt="Purdue University Logo" />
+          <UniversityLogo src="/images/Purdue_logo.png" alt="Purdue University Logo" />
           <UniversityName>Purdue University, Fort Wayne</UniversityName>
           <DegreeInfo>Aug 2023 - May 2025</DegreeInfo>
           <DegreeInfo>Master's in Computer Science</DegreeInfo>
@@ -89,7 +89,7 @@ const EducationSection = () => {
         </EducationItem>
 
         <EducationItem>
-          <UniversityLogo src="../../public/images/Sastra_Logo.jpeg" alt="Sastra University Logo" />
+          <UniversityLogo src="/images/Sastra_Logo.jpeg" alt="Sastra University Logo" />
           <UniversityName>Sastra University</UniversityName>
           <DegreeInfo>June 2016 - Nov 2020</DegreeInfo>
           <DegreeInfo>Bachelor of Technology in Computer Science Engineering</DegreeInfo>
