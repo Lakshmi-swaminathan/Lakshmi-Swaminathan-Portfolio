@@ -41,7 +41,7 @@ const SkillsSection = () => {
       <SkillsHeading>Skills</SkillsHeading>
       <SkillsList>
         <SkillCategory>
-          <CategoryIcon src="/Laptop.png" alt="Programming Languages Icon" />
+          <CategoryIcon src={`${process.env.PUBLIC_URL}/images/Laptop.png`} alt="Programming Languages Icon" />
           <CategoryInfo>
             <CategoryTitle>Programming Languages</CategoryTitle>
             <CategorySkills>Python, Javascript, Apex, Java, C++, C</CategorySkills>
@@ -49,15 +49,15 @@ const SkillsSection = () => {
         </SkillCategory>
 
         <SkillCategory>
-          <CategoryIcon src="/Web_Tech.jpg" alt="Web Technologies Icon" />
+          <CategoryIcon src={`${process.env.PUBLIC_URL}/images/Web_Tech.jpg`} alt="Web Technologies Icon" />
           <CategoryInfo>
             <CategoryTitle>Web Technologies</CategoryTitle>
-            <CategorySkills>ReactJs, NodeJs, ExpressJs, LWC, Aura</CategorySkills>
+            <CategorySkills>ReactJs, NodeJs, ExpressJs, LWC, Aura, Cypress, Mocha.js, Chai.js</CategorySkills>
           </CategoryInfo>
         </SkillCategory>
 
         <SkillCategory>
-          <CategoryIcon src="/Database.png" alt="Database Technologies Icon" />
+          <CategoryIcon src={`${process.env.PUBLIC_URL}/images/Database.png`} alt="Database Technologies Icon" />
           <CategoryInfo>
             <CategoryTitle>Database Technologies</CategoryTitle>
             <CategorySkills>MongoDB, Mongoose ODM</CategorySkills>
@@ -65,7 +65,7 @@ const SkillsSection = () => {
         </SkillCategory>
 
         <SkillCategory>
-          <CategoryIcon src="/Software.png" alt="Software Icon" />
+          <CategoryIcon src={`${process.env.PUBLIC_URL}/images/Software.png`}  alt="Software Icon" />
           <CategoryInfo>
             <CategoryTitle>Software</CategoryTitle>
             <CategorySkills>Visual Studio Code, Github, Jenkins</CategorySkills>
