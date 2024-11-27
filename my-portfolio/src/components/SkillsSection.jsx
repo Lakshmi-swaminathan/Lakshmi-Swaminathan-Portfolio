@@ -115,15 +115,15 @@ const SkillsList = styled.div`
   justify-content: space-between;
   border: 2px solid rgba(59, 160, 243, 0.87);
   border-radius: 10px;
-  padding: 100px;
+  padding: 50px; 
   margin-top: 20px;
-  width: 70vw;
+  width: 60vw; 
   margin: 0 auto;
 `;
 
 const SkillCategory = styled.div`
-  width: 48%;
-  margin-bottom: 20px;
+  width: 45%; 
+  margin-bottom: 15px; /* Reduced margin */
   display: flex;
   align-items: center;
 `;
