@@ -63,10 +63,6 @@ const DegreeInfo = styled.p`
   margin-bottom: 5px;
 `;
 
-const GPA = styled.p`
-  font-weight: bold;
-`;
-
 const SectionHeading = styled.h2`
   color: #3498db;
   align-self: flex-start;
@@ -85,7 +81,6 @@ const EducationSection = () => {
           <UniversityName>Purdue University, Fort Wayne</UniversityName>
           <DegreeInfo>Aug 2023 - May 2025</DegreeInfo>
           <DegreeInfo>Master's in Computer Science</DegreeInfo>
-          <GPA>3.67/4.0 GPA</GPA>
         </EducationItem>
 
         <EducationItem>
@@ -93,7 +88,6 @@ const EducationSection = () => {
           <UniversityName>Sastra University</UniversityName>
           <DegreeInfo>June 2016 - Nov 2020</DegreeInfo>
           <DegreeInfo>Bachelor of Technology in Computer Science Engineering</DegreeInfo>
-          <GPA>7.19/10.00 CGPA</GPA>
         </EducationItem>
       </EducationItemsContainer>
     </EducationContainer>
