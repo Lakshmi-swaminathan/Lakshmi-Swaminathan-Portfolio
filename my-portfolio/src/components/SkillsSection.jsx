@@ -7,9 +7,11 @@ const SkillsContainer = styled.div`
   background-color: #f9f9f9;
   color: #333;
   padding-top: 20px;
-  margin-top: -30px;
+  margin-top: 0px;
   width: 100vw;
-
+  display: flex; /* Added to center content */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Horizontally center */
 `;
 
 const SkillsSection = () => {
@@ -115,10 +117,10 @@ const SkillsList = styled.div`
   justify-content: space-between;
   border: 2px solid rgba(59, 160, 243, 0.87);
   border-radius: 10px;
-  padding: -5px; 
-  margin-top: -30px;
-  width: 60vw; 
-  margin: 0 auto;
+  padding: 20px; /* Maintain padding for clean layout */
+  margin-top: -50px; /* Move list further up */
+  width: 60vw;
+  margin-bottom: auto; /* Prevent bottom overflow */
 `;
 
 const SkillCategory = styled.div`
