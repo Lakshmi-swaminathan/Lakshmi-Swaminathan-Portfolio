@@ -1,14 +1,6 @@
 import React from 'react';
 import styled,{keyframes} from 'styled-components';
 
-const zoomIn = keyframes`
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.05);
-  }
-`;
 
 const WorkExperienceContainer = styled.div`
   height: 100%;
@@ -55,12 +47,7 @@ const TimelineItem = styled.div`
     margin-left: auto;
     align-items: flex-start;
   }
-  transition: transform 0.5s ease-in-out; /* Added transition property */
 
-  &:hover {
-    animation: ${zoomIn} 0.5s ease-in-out; /* Adjusted animation properties */
-    transform: scale(1.05);
-  }
 `;
 
 const ExperienceTitle = styled.h3`

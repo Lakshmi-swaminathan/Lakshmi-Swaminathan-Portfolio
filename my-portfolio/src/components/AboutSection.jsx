@@ -1,15 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-const zoomIn = keyframes`
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.05);
-  }
-`;
-
 const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -25,10 +16,6 @@ const AboutContainer = styled.div`
   transition: transform 0.3s ease;
   margin: 20px 0;
 
-  &:hover {
-    animation: ${zoomIn} 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
 `;
 
 const AboutContent = styled.div`

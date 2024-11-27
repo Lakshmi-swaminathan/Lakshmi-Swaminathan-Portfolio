@@ -1,15 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-const zoomIn = keyframes`
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.05);
-  }
-`;
-
 const SkillsContainer = styled.div`
   height: 100vh;
   overflow-y: scroll;
@@ -19,10 +10,6 @@ const SkillsContainer = styled.div`
   width: 100vw;
   transition: transform 0.3s ease;
 
-  &:hover {
-    animation: ${zoomIn} 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
 `;
 
 const SkillsSection = () => {
