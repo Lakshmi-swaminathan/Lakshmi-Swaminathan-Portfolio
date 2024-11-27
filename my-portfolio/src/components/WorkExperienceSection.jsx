@@ -76,14 +76,28 @@ const WorkExperienceSection = () => {
        <h2 style={{ paddingLeft: '50px', alignSelf: 'flex-start' }}>Work Experience</h2>
       <Timeline>
         <TimelineBar />
+        {/* Experience 3 */}
+        <TimelineItem>
+          <ExperienceTitle>Research Assistant</ExperienceTitle>
+          <p>Purdue University - March 2024 to Present</p>
+          <ul>
+          <li>working on research on “Effectiveness of brand promotion by AI influencer”. - performed data analysis using classical machine learning models(XAI for explainability) from Scikit Learn(supervised and
+unsupervised), deep learning models from TensorFlow, and scipy to analyze large amount of survey data and AI influencer dataset from Kaggle. Generated actionable insights into brand promotion effectiveness; increased model explainability by 49%.</li>
+          </ul>
+        </TimelineItem>
         {/* Experience 1 */}
         <TimelineItem>
         <ExperienceTitle>Engr II-Software development</ExperienceTitle>
           <p>Verizon, Chennai, India - Jul 2022 to Jun 2023</p>
           <ul>
-          <li>Spearheaded an innovative upsell sales process enhancement.</li>
-           <li>Customized Salesforce CPQ with Lightning Web Components.</li>
-           <li>Designed and Implemented a dynamic contracting model.</li>
+          <li>Spearheaded an innovative upsell sales process enhancement using Apex and Lightning web components
+following Agile methodology, streamlining workflow from ideation to production deployment, reducing process
+time by 34%, and increasing upsell conversions by 16%.</li>
+           <li>Customized Salesforce CPQ with Lightning Web Components, improving user experience, which led to a 20%
+reduction in time spent on complex upsell transactions.</li>
+           <li>Designed and Implemented a month-on-month dynamic contracting model in place of a fixed service term model
+with Apex, and LWC, resulting in an 11% increase in customer retention and a 14% improvement in service
+adaptability.</li>
           </ul>
          </TimelineItem>
 
@@ -92,24 +106,18 @@ const WorkExperienceSection = () => {
         <ExperienceTitle>Engr I-Software development</ExperienceTitle>
           <p>Verizon, Chennai, India - Sept 2020 to Jul 2022</p>
           <ul>
-          <li>Translated requirements into user stories and consistently delivered on time.</li>
-            <li>Collaborated with cross-functional stakeholders to ensure project success.</li>
-            <li>Provided valuable insights for scalable problem-solving solutions during Design meetings.</li>
-            <li>Adhered to coding best practices, producing efficient, clean, and reusable code.</li>
-            <li>Mastered the technical architecture, covering lead generation, customer information maintenance, sales processes, and customer retention strategies.</li>
-            <li>Achieved Salesforce integration and security with a 98% accuracy rating in a 42Crunch security audit.</li>
-            <li>Resolved Salesforce governor limit exceptions through optimized coding and refined debugging skills during production support.</li>
+          <li>Translated business requirements into technical user stories and consistently delivered on time.</li>
+          <li>Collaborated with cross-functional stakeholders, leading to a 100% project completion rate within deadlines.</li>
+          <li>Provided insights during design meetings, contributing to the creation of scalable solutions that reduced
+operational inefficiencies by 25%.</li>
+          <li>Adhered to coding best practices, producing efficient, clean, and reusable code.</li>
+          <li>Achieved Salesforce integration and security with a 98% accuracy rating in a 42Crunch security audit for the API</li>
+          <li>Resolved Salesforce governor limit exceptions in Apex triggers, reducing execution time from 5s to 15ms, leading
+to a 40% increase in system performance during production support.</li>
           </ul>
           </TimelineItem>
 
-        {/* Experience 3 */}
-        <TimelineItem>
-          <ExperienceTitle>SDE - Intern</ExperienceTitle>
-          <p>Verizon, Chennai, India - Feb 2020 to May 2020</p>
-          <ul>
-          <li>Learned and worked in Apex, Aura, Visualforce, Salesforce flows, Objects in Salesforce, Apex triggers, Javascript, SOQL, etc.</li>
-          </ul>
-        </TimelineItem>
+        
       </Timeline>
     </WorkExperienceContainer>
   );
