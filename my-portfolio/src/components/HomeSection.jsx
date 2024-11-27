@@ -126,7 +126,7 @@ const HomeSection = () => {
       <ContentContainer>
         <HomeImage src={`${process.env.PUBLIC_URL}/images/Lakshmi.jpg`} alt="Lakshmi Swaminathan" />
         <h1>Lakshmi Swaminathan</h1>
-        <Role>Full Stack Developer <br /> Master's in Computer Science, Purdue University <br /> Ex-SDE-II at Verizon<br /></Role>
+        <Role>Full Stack Developer &npsp; / Machine Learning Engineer <br /> Master's in Computer Science, Purdue University <br /> Ex-SDE-II at Verizon<br /></Role>
         <DownloadButton href={`${process.env.PUBLIC_URL}/Lakshmi_Swaminathan_Resume.pdf`}  download>
           Download Resume
         </DownloadButton>
