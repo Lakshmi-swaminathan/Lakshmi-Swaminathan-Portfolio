@@ -5,7 +5,7 @@ const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 40px;
+  padding: 150px 40px;
   background-color: #f9f9f9;
   color: #333;
   width: 100vw;
@@ -15,6 +15,7 @@ const AboutContainer = styled.div`
   overflow: hidden;
   transition: transform 0.3s ease;
   margin: 20px 0;
+  min-height: 600px;
 
 `;
 
