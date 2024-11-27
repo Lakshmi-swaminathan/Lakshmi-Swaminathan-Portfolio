@@ -6,9 +6,9 @@ const SkillsContainer = styled.div`
   overflow-y: scroll;
   background-color: #f9f9f9;
   color: #333;
-  padding-top: 120px;
+  padding-top: 20px;
+  margin-top: -30px;
   width: 100vw;
-  transition: transform 0.3s ease;
 
 `;
 
@@ -115,8 +115,8 @@ const SkillsList = styled.div`
   justify-content: space-between;
   border: 2px solid rgba(59, 160, 243, 0.87);
   border-radius: 10px;
-  padding: 50px; 
-  margin-top: 20px;
+  padding: -5px; 
+  margin-top: -30px;
   width: 60vw; 
   margin: 0 auto;
 `;
