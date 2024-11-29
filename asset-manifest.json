@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Lakshmi-Swaminathan-Portfolio/static/css/main.9ad045df.css",
-    "main.js": "/Lakshmi-Swaminathan-Portfolio/static/js/main.cdadc578.js",
+    "main.js": "/Lakshmi-Swaminathan-Portfolio/static/js/main.2db26016.js",
     "index.html": "/Lakshmi-Swaminathan-Portfolio/index.html",
     "main.9ad045df.css.map": "/Lakshmi-Swaminathan-Portfolio/static/css/main.9ad045df.css.map",
-    "main.cdadc578.js.map": "/Lakshmi-Swaminathan-Portfolio/static/js/main.cdadc578.js.map"
+    "main.2db26016.js.map": "/Lakshmi-Swaminathan-Portfolio/static/js/main.2db26016.js.map"
   },
   "entrypoints": [
     "static/css/main.9ad045df.css",
-    "static/js/main.cdadc578.js"
+    "static/js/main.2db26016.js"
   ]
 }
